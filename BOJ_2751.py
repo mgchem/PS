@@ -1,4 +1,4 @@
-#quick sort
+#quick sort -> worst-case TLE
 
 import sys
 
@@ -6,7 +6,7 @@ n = int(sys.stdin.readline())
 data = []
 for i in range(n):
     data.append(int(sys.stdin.readline()))
-
+'''
 sys.setrecursionlimit(10**6)
 
 def qsort(arr):
@@ -22,5 +22,10 @@ def qsort(arr):
     return qsort(larr) + [p] + qsort(rarr)
 
 data = qsort(data)
+for i in data:
+    print(i)
+'''
+
+data = sorted(data)
 for i in data:
     print(i)
